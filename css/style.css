@@ -435,6 +435,10 @@ a {
     padding: 20px 16px;
   }
 
+  .recentwork__wrap {
+    text-align: center;
+  }
+
   .recentwork__title {
     font-size: 26px;
   }
@@ -453,11 +457,11 @@ a {
   }
 
   .recentwork__cards-image {
-    width: 80%;
+    width: 100%;
   }
 
   .recentwork__card-wrap {
-    width: 80%;
+    width: 100%;
   }
 
   .recentwork__cards-title {
