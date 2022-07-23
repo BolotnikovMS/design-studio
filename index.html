@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Libre+Baskerville&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Analogue</title>
@@ -37,13 +38,13 @@
         </nav>
       </header>
       <section class="promo" id="promo">
-        <div class="promo__wrap">
+        <div class="promo__wrap" data-aos="fade-right">
           <h1 class="promo__title">
             We're a multi-disciplinary design studio that helps <br />
             brands thrive.
           </h1>
           <img src="./icon/circle.svg" alt="circle" class="promo__circle" />
-          <div class="promo__text">
+          <div class="promo__text" data-aos="fade-down">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -66,7 +67,7 @@
           <h1 class="recentwork__title">Recent work</h1>
           <div class="recentwork__cards">
             <div class="recentwork__row">
-              <div class="recentwork__cards-card">
+              <div class="recentwork__cards-card" data-aos="fade-up-right">
                 <img
                   src="./image/recent work/1.png"
                   alt="Wine"
@@ -82,7 +83,7 @@
                   </div>
                 </div>
               </div>
-              <div class="recentwork__cards-card">
+              <div class="recentwork__cards-card" data-aos="fade-right">
                 <img
                   src="./image/recent work/3.png"
                   alt="Coffee"
@@ -98,7 +99,7 @@
                   </div>
                 </div>
               </div>
-              <div class="recentwork__cards-card">
+              <div class="recentwork__cards-card" data-aos="fade-up">
                 <img
                   src="./image/recent work/5.png"
                   alt="Miami gin"
@@ -116,7 +117,7 @@
               </div>
             </div>
             <div class="recentwork__row">
-              <div class="recentwork__cards-card">
+              <div class="recentwork__cards-card" data-aos="fade-up-left">
                 <img
                   src="./image/recent work/2.png"
                   alt="Lumin Skincare"
@@ -133,7 +134,7 @@
                   </div>
                 </div>
               </div>
-              <div class="recentwork__cards-card">
+              <div class="recentwork__cards-card" data-aos="fade-left">
                 <img
                   src="./image/recent work/4.png"
                   alt="Batch Gummies"
@@ -148,13 +149,13 @@
                   </div>
                 </div>
               </div>
-              <div class="recentwork__cards-card">
+              <div class="recentwork__cards-card" data-aos="fade-up">
                 <img
                   src="./image/recent work/6.png"
                   alt="Good skin club"
                   class="recentwork__cards-image"
                 />
-                <div class="recentwork__card-wrap">
+                <div class="recentwork__card-wrap" data-aos="fade-up">
                   <div class="recentwork__cards-title">Good Skin Club</div>
                   <div class="recentwork__cards-category">
                     <a href="#">Packaging / </a>
@@ -172,7 +173,7 @@
       </section>
       <!-- /.recentwork -->
       <section class="aboutus" id="aboutus">
-        <div class="aboutus__block-1">
+        <div class="aboutus__block-1" data-aos="flip-up">
           <div class="block__titles-1">
             <h2 class="block__title">Built to last.</h2>
             <h2 class="block__subtitle">Always growing.</h2>
@@ -205,7 +206,7 @@
             </div>
           </div>
         </div>
-        <div class="aboutus__block-2">
+        <div class="aboutus__block-2" data-aos="zoom-in">
           <div class="block__description">
             <p class="block__paragraph-big">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -216,7 +217,7 @@
               veniam, quis nostrud.
             </p>
             <div class="block__wrap">
-              <div>
+              <div data-aos="fade-up">
                 <span>Custom</span>
                 <p>
                   Consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -227,7 +228,7 @@
                   pariatur.
                 </p>
               </div>
-              <div>
+              <div data-aos="fade-down">
                 <span>Beautiful</span>
                 <p>
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -284,7 +285,7 @@
           />
         </div>
       </section>
-      <section class="start" id="start">
+      <section class="start" id="start" data-aos="fade-down">
         <div class="start__wrap">
           <h2 class="start__title">
             Ready to <span class="start__subtitle">start?</span>
@@ -366,5 +367,7 @@
     </main>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
