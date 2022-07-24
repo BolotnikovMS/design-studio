@@ -1,0 +1,22 @@
+.header {
+  padding: 20px 16px;
+  min-height: 75px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  line-height: 22px;
+}
+
+.header-nav__list {
+  display: flex;
+}
+
+.header-nav__list li + li {
+  margin-left: 26px;
+}

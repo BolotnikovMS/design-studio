@@ -1,0 +1,34 @@
+.client-content {
+  padding: 80px 40px;
+  background-color: #F7F6F3;
+}
+
+.client-titles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.client__title {
+  font-size: 38px;
+}
+
+.client__subtitle {
+  font-family: 'Libre Baskerville';
+  font-size: 32px;
+}
+
+.client-list {
+  min-height: 167px;
+  padding-bottom: 27px;
+  border-top: 1px solid #6D6B67;
+  border-bottom: 1px solid #6D6B67;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.client-list > img {
+  max-width: 126px;
+  margin: 40px 65px 20px;
+}

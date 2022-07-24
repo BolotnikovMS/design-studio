@@ -1,0 +1,32 @@
+.home {
+  width: 100%;
+  padding: 100px 16px;
+}
+
+.home-colum {
+  display: flex;
+  flex-direction: column;
+}
+
+.home__title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 90px;
+  letter-spacing: 0.2px;
+}
+
+.home__text {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.home__circle {
+  width: 32px;
+  height: 32px;
+  margin-top: 12px;
+}
+
+.home__text > p {
+  margin: 44px 20px 0;
+  width: 347px; 
+}

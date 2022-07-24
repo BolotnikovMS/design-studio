@@ -1,0 +1,25 @@
+.start {}
+
+.start-row {
+  padding: 40px;
+  background-color: #E0F391;
+}
+
+.start-row > hr {
+  border: 1px solid #6D6B67;
+}
+
+.star-content {
+  padding-top: 23px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.start__title {
+  font-size: 30px;
+}
+
+.start__title--fs{
+  font-family: 'Libre Baskerville';
+  font-size: 28px;
+}

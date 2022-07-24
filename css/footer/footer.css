@@ -1,0 +1,82 @@
+.footer {}
+
+.footer-wrap {
+  background-color: #1F1F1F;
+  padding: 80px 40px 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-content + * {
+  margin-top: 80px;
+}
+
+.footer-logo {
+  width: 40%;
+}
+
+.footer-logo__title {
+  margin: 63px 0 50px;
+  font-family: 'Libre Baskerville';
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+
+.footer-logo > hr {
+  border: 1px solid #6D6B67;
+}
+
+.footer-nav {
+  width: 35%;
+  margin-left: 150px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+
+.footer-nav li + li {
+  margin-top: 9px;
+}
+
+.footer-copyright {
+  color: #fff;
+  display: flex;
+  column-gap: 325px;
+}
+
+.footer-copyright p {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.footer-copyright p > span {
+  font-family: 'Libre Baskerville';
+}
+
+.copyright-author {
+  display: flex;
+  align-items: start;
+}
+
+.copyright-author p {
+  font-size: 14px;
+}
+
+.copyright-author p + p {
+  margin-left: 60px;
+}
+
+.copyright-author p > span {
+  font-size: 13px;
+  color: #A8A6A0;
+}

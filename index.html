@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Libre+Baskerville&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Analogue</title>
-  </head>
 
-  <body>
-    <main class="main">
-      <header class="header">
-        <img src="./icon/logo.svg" alt="Logo" class="logo" />
-        <nav class="menu__header">
-          <ul class="menu__list-header">
-            <li class="menu__item">
-              <a href="#recentwork" class="menu__list-item">Our work</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Libre+Baskerville&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header/header.css" />
+  <link rel="stylesheet" href="css/home/home.css">
+  <link rel="stylesheet" href="css/recent_work/resent_work.css">
+  <link rel="stylesheet" href="css/aboutus/aboutus.css">
+  <link rel="stylesheet" href="css/client/client.css">
+  <link rel="stylesheet" href="css/start/start.css">
+  <link rel="stylesheet" href="css/footer/footer.css">
+  <title>Analogue</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-row">
+        <img src="./icon/logo.svg" alt="Logo"/>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="menu__item header-nav__item">
+              <a href="#recentwork">Our work</a>
             </li>
-            <li class="menu__item">
-              <a href="#promo" class="menu__list-item">What we do</a>
+            <li class="menu__item header-nav__item">
+              <a href="#promo">What we do</a>
             </li>
-            <li class="menu__item">
-              <a href="#aboutus" class="menu__list-item">About us</a>
+            <li class="menu__item header-nav__item">
+              <a href="#aboutus">About us</a>
             </li>
-            <li class="menu__item">
-              <a href="#start" class="menu__list-item">Get in touch</a>
+            <li class="menu__item header-nav__item">
+              <a href="#start">Get in touch</a>
             </li>
           </ul>
         </nav>
-      </header>
-      <section class="promo" id="promo">
-        <div class="promo__wrap" data-aos="fade-right">
-          <h1 class="promo__title">
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="home" id="home">
+      <div class="container">
+        <div class="home-colum" data-aos="fade-right">
+          <h1 class="home__title">
             We're a multi-disciplinary design studio that helps <br />
             brands thrive.
           </h1>
-          <img src="./icon/circle.svg" alt="circle" class="promo__circle" />
-          <div class="promo__text" data-aos="fade-down">
+          <img src="./icon/circle.svg" alt="circle" class="home__circle" />
+          <div class="home__text" data-aos="fade-down">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -60,155 +71,189 @@
             </p>
           </div>
         </div>
-      </section>
-      <!-- /.promo -->
-      <section class="recentwork" id="recentwork">
-        <div class="recentwork__wrap">
-          <h1 class="recentwork__title">Recent work</h1>
-          <div class="recentwork__cards">
-            <div class="recentwork__row">
-              <div class="recentwork__cards-card" data-aos="fade-up-right">
-                <img
-                  src="./image/recent work/1.png"
-                  alt="Wine"
-                  class="recentwork__cards-image"
-                />
-                <div class="recentwork__card-wrap">
-                  <div class="recentwork__cards-title">Rockfront Wine</div>
-                  <div class="recentwork__cards-category">
-                    <a href="#">Packaging / </a>
-                    <a href="#">Digital Content / </a>
-                    <a href="#">Website</a>
-                    <span>/</span>
-                  </div>
+      </div>
+    </section>
+    <!-- /.promo -->
+    <section class="recentwork" id="recentwork">
+      <div class="container">
+        <div class="recentwork-wrap">
+          <div class="recentwork-heading">
+            <h2 class="recentwork-heading__title">Recent work</h2>
+          </div>
+          <div class="recentwork-cards">
+            <div class="recentwork-row">
+              <div class="card" data-aos="fade-up-right">
+                <img src="./image/recent work/1.png" alt="Wine" class="card__image" />
+                <div class="card-wrap">
+                  <h3 class="card__title">Rockfront Wine</h3>
+                  <ul class="card__category">
+                    <li class="category__item">
+                      <a href="#">Packaging</a>/ 
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Digital Content</a>/ 
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Website</a>
+                      <span>/</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="recentwork__cards-card" data-aos="fade-right">
-                <img
-                  src="./image/recent work/3.png"
-                  alt="Coffee"
-                  class="recentwork__cards-image"
-                />
-                <div class="recentwork__card-wrap">
-                  <div class="recentwork__cards-title">Better Coffee Co</div>
-                  <div class="recentwork__cards-category">
-                    <a href="#">Art Direction / </a>
-                    <a href="#">Packaging / </a>
-                    <a href="#">Illustration</a>
-                    <span>/</span>
-                  </div>
+              <div class="card" data-aos="fade-right">
+                <img src="./image/recent work/3.png" alt="Coffee" class="card__image" />
+                <div class="card-wrap">
+                  <h3 class="card__title">Better Coffee Co</h3>
+                  <ul class="card__category">
+                    <li class="category__item">
+                      <a href="#">Art Direction</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Packaging</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Illustration</a>
+                      <span>/</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="recentwork__cards-card" data-aos="fade-up">
-                <img
-                  src="./image/recent work/5.png"
-                  alt="Miami gin"
-                  class="recentwork__cards-image"
-                />
-                <div class="recentwork__card-wrap">
-                  <div class="recentwork__cards-title">Miami Gin</div>
-                  <div class="recentwork__cards-category">
-                    <a href="#">Website / </a>
-                    <a href="#">Illustration / </a>
-                    <a href="#">Art Direction</a>
-                    <span>/</span>
-                  </div>
+              <div class="card" data-aos="fade-up">
+                <img src="./image/recent work/5.png" alt="Miami gin" class="card__image" />
+                <div class="card-wrap">
+                  <h3 class="card__title">Miami Gin</h3>
+                  <ul class="card__category">
+                    <li class="category__item">
+                      <a href="#">Website</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Illustration</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Art Direction</a>
+                      <span>/</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="recentwork__row">
-              <div class="recentwork__cards-card" data-aos="fade-up-left">
-                <img
-                  src="./image/recent work/2.png"
-                  alt="Lumin Skincare"
-                  class="recentwork__cards-image"
-                />
-                <div class="recentwork__card-wrap">
-                  <div class="recentwork__cards-title">Lumin Skincare</div>
-                  <div class="recentwork__cards-category">
-                    <a href="#">Website / </a>
-                    <a href="#">Visual Identity / </a>
-                    <a href="#">Packaging / </a>
-                    <a href="#">Illustration</a>
-                    <span>/</span>
-                  </div>
+            <div class="recentwork-row">
+              <div class="card" data-aos="fade-up-left">
+                <img src="./image/recent work/2.png" alt="Lumin Skincare" class="card__image" />
+                <div class="card-wrap">
+                  <h3 class="card__title">Lumin Skincare</h3>
+                  <ul class="card__category">
+                    <li class="category__item">
+                      <a href="#">Website</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Visual Identity</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Packaging</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Illustration</a>
+                      <span>/</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="recentwork__cards-card" data-aos="fade-left">
-                <img
-                  src="./image/recent work/4.png"
-                  alt="Batch Gummies"
-                  class="recentwork__cards-image"
-                />
-                <div class="recentwork__card-wrap">
-                  <div class="recentwork__cards-title">Batch Gummies</div>
-                  <div class="recentwork__cards-category">
-                    <a href="#">Illustration / </a>
-                    <a href="#">Visual Identity</a>
-                    <span>/</span>
-                  </div>
+              <div class="card" data-aos="fade-left">
+                <img src="./image/recent work/4.png" alt="Batch Gummies" class="card__image" />
+                <div class="card-wrap">
+                  <h3 class="card__title">Batch Gummies</h3>
+                  <ul class="card__category">
+                    <li class="category__item">
+                      <a href="#">Website</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Visual Identity</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Packaging</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Illustration</a>
+                      <span>/</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="recentwork__cards-card" data-aos="fade-up">
-                <img
-                  src="./image/recent work/6.png"
-                  alt="Good skin club"
-                  class="recentwork__cards-image"
-                />
-                <div class="recentwork__card-wrap" data-aos="fade-up">
-                  <div class="recentwork__cards-title">Good Skin Club</div>
-                  <div class="recentwork__cards-category">
-                    <a href="#">Packaging / </a>
-                    <a href="#">Art Direction / </a>
-                    <a href="#">Digital Content / </a>
-                    <a href="#">Illustration</a>
-                    <span>/</span>
-                  </div>
+              <div class="card" data-aos="fade-up">
+                <img src="./image/recent work/6.png" alt="Good skin club" class="card__image" />
+                <div class="card-wrap" data-aos="fade-up">
+                  <h3 class="card__title">Good Skin Club</h3>
+                  <ul class="card__category">
+                    <li class="category__item">
+                      <a href="#">Packaging</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Art Direction</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Digital Content</a>/
+                    </li>
+                    <li class="category__item">
+                      <a href="#">Illustration</a>
+                      <span>/</span>
+                    </li>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="btn">See all work</button>
-      </section>
-      <!-- /.recentwork -->
-      <section class="aboutus" id="aboutus">
-        <div class="aboutus__block-1" data-aos="flip-up">
-          <div class="block__titles-1">
-            <h2 class="block__title">Built to last.</h2>
-            <h2 class="block__subtitle">Always growing.</h2>
+        <div class="recentwork-btn">
+          <a href="#!" class="btn">See all work</a>
+        </div>
+      </div>
+    </section>
+    <!-- /.recentwork -->
+    <section class="aboutus" id="aboutus">
+      <div class="container">
+        <div class="aboutus-content aboutus-content--color" data-aos="flip-up">
+          <div class="aboutus-titles aboutus-titles--mr">
+            <h2 class="aboutus-titles__title">Built to last.</h2>
+            <h3 class="aboutus-titles__subtitle">Always growing.</h3>
           </div>
-          <div class="block__description">
-            <p>
+          <div class="aboutus-description">
+            <hr>
+            <p class="aboutus-description__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum.
             </p>
-            <div class="block__indicators">
-              <div class="block__index">
-                <div class="index__number">127</div>
-                <div class="index__text">Projects done</div>
+            <div class="aboutus-statistics">
+              <div class="statistic">
+                <p class="statistic__number">127</p>
+                <span class="statistic__text">Projects done</span>
               </div>
-              <div class="block__index">
-                <div class="index__number">87%</div>
-                <div class="index__text">Chance of coffee</div>
+              <div class="statistic">
+                <p class="statistic__number">87%</p>
+                <span class="index__text">Chance of coffee</span>
               </div>
-              <div class="block__index">
-                <div class="index__number">24</div>
-                <div class="index__text">Team members</div>
+              <div class="statistic">
+                <p class="statistic__number">24</p>
+                <span class="index__text">Team members</span>
               </div>
-              <div class="block__index">
-                <div class="index__number">4.7</div>
-                <div class="index__text">Average rating</div>
+              <div class="statistic">
+                <p class="statistic__number">4.7</p>
+                <span class="index__text">Average rating</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="aboutus__block-2" data-aos="zoom-in">
-          <div class="block__description">
-            <p class="block__paragraph-big">
+        <div class="aboutus-content aboutus-content--reverse">
+          <div class="aboutus-titles aboutus-titles--ml">
+            <h2 class="aboutus-titles__title">8 years in,</h2>
+            <h2 class="aboutus-titles__subtitle">stronger than ever.</h2>
+            <a href="#">More about us</a>
+          </div>
+          <div class="aboutus-description aboutus-description--big">
+            <hr>
+            <p class="aboutus-description__text aboutus-description__text--big" data-aos="flip-down">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -217,128 +262,113 @@
               veniam, quis nostrud.
             </p>
             <div class="block__wrap">
-              <div data-aos="fade-up">
+              <p data-aos="fade-up">
                 <span>Custom</span>
-                <p>
-                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur.
-                </p>
-              </div>
-              <div data-aos="fade-down">
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.
+              </p>
+              <p data-aos="fade-down">
                 <span>Beautiful</span>
-                <p>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat.
-                </p>
-              </div>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat.
+              </p>
             </div>
           </div>
-          <div class="block__titles-2">
-            <h2 class="block__title">8 years in,</h2>
-            <h2 class="block__subtitle">stronger than ever.</h2>
-            <a href="#">More about us</a>
+        </div>
+      </div>
+    </section>
+    <!-- /.aboutus -->
+    <section class="client">
+      <div class="container">
+        <div class="client-content" data-aos="zoom-out">
+          <div class="client-titles">
+            <h2 class="client__title">
+              Some of our <span class="client__subtitle">recent clients</span>
+            </h2>
+          </div>
+          <div class="client-list">
+            <img src="icon/clients/carded.svg" alt="Carded" class="list__item" />
+            <img src="icon/clients/now-in-tech.svg" alt="Now In Tech" class="list__item" />
+            <img src="icon/clients/focus-fox.svg" alt="Focus fox" class="list__item" />
+            <img src="icon/clients/optimer.svg" alt="Optimer" class="list__item" />
+            <img src="icon/clients/etro.svg" alt="Etro" class="list__item" />
+            <img src="icon/clients/emerald.svg" alt="Emerald" class="list__item" />
+            <img src="icon/clients/carded.svg" alt="Carded" class="list__item" />
+            <img src="icon/clients/now-in-tech.svg" alt="Now In Tech" class="list__item" />
           </div>
         </div>
-      </section>
-      <!-- /.aboutus -->
-      <section class="client">
-        <div class="client__titles">
-          <h2 class="client__title">
-            Some of our <span class="client__subtitle">recent clients</span>
-          </h2>
-        </div>
-        <div class="client__list">
-          <img src="icon/clients/carded.svg" alt="Carded" class="list__item" />
-          <img
-            src="icon/clients/now-in-tech.svg"
-            alt="Now In Tech"
-            class="list__item"
-          />
-          <img
-            src="icon/clients/focus-fox.svg"
-            alt="Focus fox"
-            class="list__item"
-          />
-          <img
-            src="icon/clients/optimer.svg"
-            alt="Optimer"
-            class="list__item"
-          />
-          <img src="icon/clients/etro.svg" alt="Etro" class="list__item" />
-          <img
-            src="icon/clients/emerald.svg"
-            alt="Emerald"
-            class="list__item"
-          />
-          <img src="icon/clients/carded.svg" alt="Carded" class="list__item" />
-          <img
-            src="icon/clients/now-in-tech.svg"
-            alt="Now In Tech"
-            class="list__item"
-          />
-        </div>
-      </section>
-      <section class="start" id="start" data-aos="fade-down">
-        <div class="start__wrap">
-          <h2 class="start__title">
-            Ready to <span class="start__subtitle">start?</span>
-          </h2>
-          <button class="btn">Get in touch</button>
-        </div>
-      </section>
-      <!-- /.start -->
-      <footer class="footer">
-        <div class="footer__wrap">
-          <div class="footer__title-wrap">
-            <img src="./icon/logo-footer.svg" class="footer__title" />
-            <h2 class="footer__subtitle">Stay in the loop</h2>
+      </div>
+    </section>
+    <section class="start" id="start" data-aos="fade-down">
+      <div class="container">
+        <div class="start-row">
+          <hr>
+          <div class="star-content">
+            <h2 class="start__title">
+              Ready to <span class="start__title--fs">start?</span>
+            </h2>
+            <button class="btn">Get in touch</button>
           </div>
-          <nav class="footer__menu">
+        </div>
+      </div>
+    </section>
+    <!-- /.start -->
+  </main>
+  <footer class="footer ">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="./icon/logo-footer.svg" class="footer-logo__logo" />
+            <h2 class="footer-logo__title">Stay in the loop</h2>
+            <hr>      
+          </div>
+          <nav class="footer-nav">
             <ul>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">Our work</a>
+                <a href="#recentwork">Our work</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">What we do</a>
+                <a href="#aboutus">About us</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">Recent news</a>
+                <a href="#start">Get in touch</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">About us</a>
+                <a href="#">What we do</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">Get in touch</a>
+                <a href="#">Recent news</a>
               </li>
             </ul>
             <ul>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">Privacy policy</a>
+                <a href="#">Privacy policy</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">Style guid</a>
+                <a href="#">Style guid</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">Licenses</a>
+                <a href="#">Licenses</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">Instructions</a>
+                <a href="#">Instructions</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">Password</a>
+                <a href="#">Password</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="footer__menu-item">404</a>
+                <a href="#">404</a>
               </li>
             </ul>
             <ul>
@@ -357,17 +387,22 @@
             </ul>
           </nav>
         </div>
-        <div class="copyright">
+        <div class="footer-copyright">
           <p><span>© Analogue 2021.</span> All Rights Reserved.</p>
-          <p>Built by Nikolai Bain</p>
-          <p>Powered by Webflow</p>
+          <div class="copyright-author">
+            <p>Built by <span>Nikolai Bain</span></p>
+            <p>Powered <span>by Webflow</span></p>  
+          </div>
         </div>
-      </footer>
-      <!-- /.footer -->
-    </main>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>  
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+      </div>
+    </div>
+  </footer>
+  <!-- /.footer -->
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
