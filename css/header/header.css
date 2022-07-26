@@ -1,6 +1,7 @@
 .header {
   padding: 20px 16px;
   min-height: 75px;
+  transition: all 0.4s ease;
 }
 
 .header-row {
@@ -19,4 +20,13 @@
 
 .header-nav__list li + li {
   margin-left: 26px;
+}
+
+.header.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
 }

@@ -19,11 +19,12 @@
   <link rel="stylesheet" href="css/client/client.css">
   <link rel="stylesheet" href="css/start/start.css">
   <link rel="stylesheet" href="css/footer/footer.css">
+  <link rel="stylesheet" href="css/modal/modal.css">
   <title>Analogue</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header ">
     <div class="container">
       <div class="header-row">
         <img src="./icon/logo.svg" alt="Logo"/>
@@ -46,14 +47,15 @@
       </div>
     </div>
   </header>
-  <main class="main">
+  <main class="main ">
     <section class="home" id="home">
       <div class="container">
-        <div class="home-colum" data-aos="fade-right">
-          <h1 class="home__title">
+        <div class="home-colum" >
+          <!-- <h1 class="home__title">
             We're a multi-disciplinary design studio that helps <br />
             brands thrive.
-          </h1>
+          </h1> -->
+          <h1 class="home__title"></h1>
           <img src="./icon/circle.svg" alt="circle" class="home__circle" />
           <div class="home__text" data-aos="fade-down">
             <p>
@@ -398,6 +400,24 @@
     </div>
   </footer>
   <!-- /.footer -->
+
+  <div class="modal none">
+    <div class="modal__content">
+      <div class="modal__header">
+        <h2 class="modal__title">Далеко-далеко, за словесными.</h2>
+        <button class="btn__close">
+          <img src="./icon/close.svg" alt="Close">
+        </button>
+      </div>
+      <div class="modal__body">
+        <p>Далеко-далеко за словесными горами в стране гласных и согласных.</p>
+      </div>
+      <div class="modal__footer">
+        <button>Send</button>
+      </div>
+    </div>
+  </div>
+  <!-- /.popup -->
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
