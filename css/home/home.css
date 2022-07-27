@@ -9,6 +9,7 @@
 }
 
 .home__title {
+  min-height: 270px;
   font-weight: 700;
   font-size: 72px;
   line-height: 90px;

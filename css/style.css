@@ -18,6 +18,7 @@ body {
 /* Links */
 a {
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 a:hover {
@@ -44,4 +45,39 @@ a:hover {
   border: 1px solid #1F1F1F;
   color: #000;
   transform: scale(1.2);
+}
+
+/* Form */
+
+.form__input {
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.form__input:focus {
+  outline: 1px solid #000;
+  border-radius: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.form__input + * {
+  margin-top: 30px;
+}
+
+.form__message {
+  resize: none;
+  padding: 10px;
+  -webkit-box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+          box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 38px;
+  color: #000;
+  outline: none;
+}
+
+.form__message:focus {
+  outline: 1px solid #000;
 }

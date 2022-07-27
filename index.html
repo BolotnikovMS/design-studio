@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <header class="header ">
+  <header class="header">
     <div class="container">
       <div class="header-row">
         <img src="./icon/logo.svg" alt="Logo"/>
@@ -40,14 +40,14 @@
               <a href="#aboutus">About us</a>
             </li>
             <li class="menu__item header-nav__item">
-              <a href="#start">Get in touch</a>
+              <a data-contactus-modal >Get in touch</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-  <main class="main ">
+  <main class="main">
     <section class="home" id="home">
       <div class="container">
         <div class="home-colum" >
@@ -308,7 +308,7 @@
         </div>
       </div>
     </section>
-    <section class="start" id="start" data-aos="fade-down">
+    <section class="start" data-aos="fade-down">
       <div class="container">
         <div class="start-row">
           <hr>
@@ -316,14 +316,14 @@
             <h2 class="start__title">
               Ready to <span class="start__title--fs">start?</span>
             </h2>
-            <button class="btn">Get in touch</button>
+            <button class="btn" data-contactus-modal>Get in touch</button>
           </div>
         </div>
       </div>
     </section>
     <!-- /.start -->
   </main>
-  <footer class="footer ">
+  <footer class="footer none">
     <div class="container">
       <div class="footer-wrap">
         <div class="footer-content">
@@ -401,20 +401,25 @@
   </footer>
   <!-- /.footer -->
 
-  <div class="modal none">
+  <div class="modal getintouch">
     <div class="modal__content">
       <div class="modal__header">
-        <h2 class="modal__title">Далеко-далеко, за словесными.</h2>
+        <h2 class="modal__title">Contact Us</h2>
         <button class="btn__close">
           <img src="./icon/close.svg" alt="Close">
         </button>
       </div>
-      <div class="modal__body">
-        <p>Далеко-далеко за словесными горами в стране гласных и согласных.</p>
-      </div>
-      <div class="modal__footer">
-        <button>Send</button>
-      </div>
+      <form action="">
+        <div class="modal__body">
+          <input type="text" name="full_name" class="form__input" placeholder="Full name" required>
+          <input type="email" name="email" class="form__input" placeholder="Email address" required>
+          <input type="phone" name="phone" class="form__input" id="phone" placeholder="Phone" required>
+          <textarea name="description" class="form__message" cols="30" rows="3" placeholder="Description"></textarea>
+        </div>
+        <div class="modal__footer">
+          <button type="submit" class="btn btn-fw-7">Send now</button>
+        </div>
+      </form>
     </div>
   </div>
   <!-- /.popup -->

@@ -64,4 +64,17 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {
     headerFixed()
   })
+
+  // Modal
+  // const modalTrigger = document.querySelectorAll('[data-contactus-modal]')
+  // const modalContact = document.querySelector('.getintouch')
+  // const modalBtnClose = modalContact.querySelector('.btn__close')
+
+  // modalTrigger.forEach(btn => {
+  //   btn.addEventListener('click', () => {
+  //     modalContact.classList.add('active')
+  //     document.body.style.overflow = 'hidden'
+  //     document.body.style.paddingRight = '15px'
+  //   })
+  // })
 })
