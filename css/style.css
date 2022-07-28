@@ -5,6 +5,11 @@ body {
   font-weight: 400;
 }
 
+.body-no-scroll {
+  overflow: hidden;
+  padding-right: 15px;
+}
+
 .none {
   display: none !important;
 }

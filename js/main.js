@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.header')
     const home = document.querySelector('.home')  
     let scrollTop = window.scrollY
-    let homeCenter = home.offsetHeight / 2
+    let homeCenter = home.offsetHeight / 4
 
     if (scrollTop >= homeCenter) {
       header.classList.add('header-fixed')
@@ -66,15 +66,29 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
   // Modal
-  // const modalTrigger = document.querySelectorAll('[data-contactus-modal]')
-  // const modalContact = document.querySelector('.getintouch')
-  // const modalBtnClose = modalContact.querySelector('.btn__close')
+  const modalTrigger = document.querySelectorAll('[data-contactus-modal]')
+  const modalContact = document.querySelector('.getintouch')
+  const modalBtnClose = modalContact.querySelector('.btn__close')
+  const form = document.querySelector('.form-contact')
 
-  // modalTrigger.forEach(btn => {
-  //   btn.addEventListener('click', () => {
-  //     modalContact.classList.add('active')
-  //     document.body.style.overflow = 'hidden'
-  //     document.body.style.paddingRight = '15px'
-  //   })
-  // })
+  modalTrigger.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modalContact.classList.add('active')
+      document.body.classList.add('body-no-scroll')
+    })
+  })
+
+  modalBtnClose.addEventListener('click', () => {
+    modalContact.classList.remove('active')
+    document.body.classList.remove('body-no-scroll')
+    form.reset()
+  })
+
+  modalContact.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) {
+      modalContact.classList.remove('active')
+      document.body.classList.remove('body-no-scroll')
+      form.reset()
+    }
+  })
 })
