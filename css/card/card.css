@@ -77,3 +77,14 @@
     margin-top: 20px;
   }
 }
+
+@media (max-width: 530px) {
+  .card__title {
+    font-size: 19px;
+  }
+
+  .card__category {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+}

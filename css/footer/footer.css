@@ -146,3 +146,32 @@
     font-size: 10px;
   }
 }
+
+@media (max-width: 593px) {
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .footer-wrap {
+    padding: 30px 20px 20px;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-logo__title {
+    margin: 26px 0 20px;
+  }
+
+  .footer-logo__title {
+    font-size: 18px;
+  }
+}

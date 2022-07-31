@@ -36,7 +36,6 @@
   display: flex;
 }
 
-
 @media (max-width: 1180px) {
   .recentwork-row:nth-child(odd) {
     margin-right: 35px;
@@ -116,5 +115,33 @@
 
   .recentwork-wrap+* {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .recentwork {
+    padding: 25px 16px 20px;
+  }
+
+  .recentwork-heading__title {
+    font-size: 38px;
+  }
+
+  .recentwork-wrap+* {
+    margin-top: 25px;
+  }
+
+  .recentwork-row:nth-child(odd) {
+    margin-right: unset;
+  }
+
+  .recentwork-row:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 491px) {
+  .recentwork-heading__title {
+    font-size: 35px;
   }
 }

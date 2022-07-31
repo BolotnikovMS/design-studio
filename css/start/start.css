@@ -45,3 +45,12 @@
   }
 }
 
+@media (max-width: 530px) {
+  .start__title {
+    font-size: 25px;
+  }
+
+  .start__title--fs {
+    font-size: 25px;
+  }
+}

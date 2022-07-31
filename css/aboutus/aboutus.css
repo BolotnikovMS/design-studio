@@ -294,7 +294,6 @@
 
   .aboutus-statistics {
     justify-content: center;
-    /* column-gap: 5%; */
   }
 
   .statistic {
@@ -311,3 +310,27 @@
   }
 }
 
+@media (max-width: 530px) {
+  .aboutus-content {
+    padding: 25px 25px;
+  }
+
+  .aboutus-titles__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .aboutus-titles__subtitle {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  .aboutus-titles+* {
+    margin-top: 20px;
+  }
+
+  .aboutus-description__text--big {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

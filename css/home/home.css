@@ -141,3 +141,25 @@
     min-height: 120px;
   }
 }
+
+@media (max-width: 530px) {
+  .home {
+    padding: 100px 16px 20px;
+  }
+
+  .home__title {
+    font-size: 34px;
+    line-height: 37px;
+  }
+}
+
+@media (max-width: 491px) {
+  .home__title {
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.home__text {
+  margin: 20px 0 0;
+}
+}

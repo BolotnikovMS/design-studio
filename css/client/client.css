@@ -97,3 +97,23 @@
     margin: 25px 15px 15px;
   }
 }
+
+@media (max-width: 530px) {
+  .client__title {
+    font-size: 29px;
+  }
+
+  .client-content {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 491px) {
+  .client__title {
+    font-size: 25px;
+  }
+
+  .client__subtitle {
+    font-size: 25px;
+  }
+}
