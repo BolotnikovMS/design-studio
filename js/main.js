@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
   // Typing text
-  const homeTitleText = `We're a multi-disciplinary design studio that helps brands thrive.` // Ваш текст
+  const homeTitleText = `We're a multi-disciplinary design studio that helps brands thrive. ` // Ваш текст
 	const delay = 90; // Скорость печатания
 	const homeTitle = document.querySelector('.home__title'); // id элемента для вывода результата
 
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let scrollTop = window.scrollY
     let homeCenter = home.offsetHeight / 4
 
-    if (scrollTop >= homeCenter) {
+    if (scrollTop > header.offsetHeight) {
       header.classList.add('header-fixed')
       home.style.marginTop = `${header.offsetHeight}px`
     } else {
@@ -91,4 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
       form.reset()
     }
   })
+
+    // Mask form
+    $("#phone").mask("+7 (999) - 999 - 9999")
 })
