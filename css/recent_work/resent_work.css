@@ -145,3 +145,9 @@
     font-size: 35px;
   }
 }
+
+@media (max-width: 450px) {
+  .recentwork-heading__title {
+    font-size: 30px;
+  }
+}

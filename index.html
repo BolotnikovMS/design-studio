@@ -21,11 +21,13 @@
   <link rel="stylesheet" href="css/start/start.css">
   <link rel="stylesheet" href="css/footer/footer.css">
   <link rel="stylesheet" href="css/modal/modal.css">
+  <link rel="stylesheet" href="css/mobile/mobail-btn.css">
+  <link rel="stylesheet" href="css/mobile/mobail-nav.css">
   <title>Analogue</title>
 </head>
 
 <body>
-  <header class="header none">
+  <header class="header">
     <div class="container">
       <div class="header-row">
         <img src="./icon/logo.svg" alt="Logo"/>
@@ -45,6 +47,28 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-nav-button">
+          <span class="mobile-nav-button__icon"></span>
+        </button>
+        <div class="mobile-nav">
+          <img src="./icon/logo.svg" alt="Logo"/>
+          <nav class="mobile-nav-list">
+            <ul>
+              <li class="menu__item header-nav__item">
+                <a href="#recentwork">Our work</a>
+              </li>
+              <li class="menu__item header-nav__item">
+                <a href="#home">What we do</a>
+              </li>
+              <li class="menu__item header-nav__item">
+                <a href="#aboutus">About us</a>
+              </li>
+              <li class="menu__item header-nav__item">
+                <a data-contactus-modal >Get in touch</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>

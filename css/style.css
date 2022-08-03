@@ -94,3 +94,19 @@ a:hover {
     width: 100%;
   }
 }
+
+@media (max-width: 530px) {
+  .btn, a.btn {
+    padding: 9px 21px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 15px;
+  }
+
+  .btn, a.btn {
+    font-size: 15px;
+  }
+}

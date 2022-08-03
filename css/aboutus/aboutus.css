@@ -334,3 +334,30 @@
     line-height: 26px;
   }
 }
+
+@media (max-width: 450px) {
+  .aboutus-titles__title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .aboutus-titles__subtitle {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .aboutus-description__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .statistic__number {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutus-statistics {
+    column-gap: 7%;
+  }
+}
