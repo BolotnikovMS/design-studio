@@ -92,10 +92,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-<<<<<<< HEAD
-    // Mask form
-    $("#phone").mask("+7 (999) - 999 - 9999")
-=======
   // Mask form
   $("#phone").mask("+7 (999) - 999 - 9999")
 
@@ -119,5 +115,4 @@ window.addEventListener('DOMContentLoaded', () => {
       document.body.classList.toggle('no-scroll')
     })
   })
->>>>>>> media
 })
