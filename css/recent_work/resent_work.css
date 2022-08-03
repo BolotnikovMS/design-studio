@@ -9,9 +9,17 @@
   color: #1F1F1F;
 }
 
-.recentwork-cards {
+.recentwork-heading+* {
   margin-top: 44px;
+}
+
+.recentwork-cards {
   display: flex;
+  justify-content: center;
+}
+
+.recentwork-wrap+* {
+  margin-top: 64px;
 }
 
 .recentwork-row {
@@ -21,9 +29,125 @@
 }
 
 .recentwork-row:nth-child(odd) {
-  margin-right: 80px;   
+  margin-right: 80px;
 }
 
 .recentwork-btn {
   display: flex;
+}
+
+@media (max-width: 1180px) {
+  .recentwork-row:nth-child(odd) {
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 1135px) {
+  .recentwork {
+    padding: 80px 16px 60px;
+  }
+
+  .recentwork-heading__title {
+    font-size: 53px;
+  }
+
+  .recentwork-wrap+* {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .recentwork {
+    padding: 60px 16px 45px;
+  }
+
+  .recentwork-heading+* {
+    margin-top: 30px;
+  }
+
+  .recentwork-heading__title {
+    font-size: 50px;
+  }
+
+  .recentwork-row:nth-child(odd) {
+    margin-right: 25px;
+  }
+
+  .recentwork-row:nth-child(odd) {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 950px) {
+  .recentwork {
+    padding: 45px 16px 30px;
+  }
+
+  .recentwork-heading__title {
+    font-size: 46px;
+  }
+
+  .recentwork-heading+* {
+    margin-top: 20px;
+  }
+
+  .recentwork-wrap+* {
+    margin-top: 40px;
+  }
+
+  .recentwork-row:nth-child(odd) {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recentwork {
+    padding: 30px 16px 20px;
+  }
+
+  .recentwork-heading__title {
+    font-size: 42px;
+  }
+
+  .recentwork-heading+* {
+    margin-top: 15px;
+  }
+
+  .recentwork-wrap+* {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .recentwork {
+    padding: 25px 16px 20px;
+  }
+
+  .recentwork-heading__title {
+    font-size: 38px;
+  }
+
+  .recentwork-wrap+* {
+    margin-top: 25px;
+  }
+
+  .recentwork-row:nth-child(odd) {
+    margin-right: unset;
+  }
+
+  .recentwork-row:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 491px) {
+  .recentwork-heading__title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  .recentwork-heading__title {
+    font-size: 30px;
+  }
 }

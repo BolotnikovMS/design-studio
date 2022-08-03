@@ -9,6 +9,7 @@
 }
 
 .home__title {
+  position: relative;
   min-height: 270px;
   font-weight: 700;
   font-size: 72px;
@@ -16,18 +17,160 @@
   letter-spacing: 0.2px;
 }
 
+.home__title::after {
+  content: '';
+  position: absolute;
+  bottom: -41px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+}
+
 .home__text {
   display: inline-flex;
   justify-content: flex-end;
+  margin: 44px 0 0;
 }
 
-.home__circle {
-  width: 32px;
-  height: 32px;
-  margin-top: 12px;
+.home__text p {
+  width: 347px;
 }
 
-.home__text > p {
-  margin: 44px 20px 0;
-  width: 347px; 
+.home__text p+* {
+  margin-left: 40px;
+}
+
+@media (max-width: 1135px) {
+  .home {
+    padding: 100px 16px 60px;
+  }
+
+  .home__title {
+    font-size: 60px;
+    min-height: 170px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home {
+    padding: 80px 16px 45px;
+  }
+
+  .home__title {
+    font-size: 50px;
+    min-height: 150px;
+    line-height: 65px;
+  }
+
+  .home__text p+* {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 950px) {
+  .home {
+    padding: 70px 16px 30px;
+  }
+
+  .home__title {
+    font-size: 46px;
+    min-height: 120px;
+    line-height: 55px;
+  }
+
+  .home__text p {
+    width: 320px;
+  }
+
+  .home__text p+* {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 807px) {
+  .home__title {
+    font-size: 43px;
+    min-height: 110px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__title {
+    font-size: 41px;
+    min-height: 100px;
+    line-height: 45px;
+  }
+
+  .home__title::after {
+    content: none;
+  }
+
+  .home__text {
+    justify-content: start;
+    margin: 30px 0 0;
+  }
+}
+
+@media (max-width: 730px) {
+  .home {
+    padding: 50px 16px 30px;
+  }
+
+  .home__title {
+    font-size: 37px;
+    min-height: 80px;
+    line-height: 40px;
+  }
+
+  .home__text {
+    flex-direction: column;
+  }
+
+  .home__text p {
+    width: 100%;
+  }
+
+  .home__text p+* {
+    margin-left: unset;
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 660px) {
+  .home__title {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 530px) {
+  .home {
+    padding: 40px 16px 20px;
+  }
+
+  .home__title {
+    font-size: 34px;
+    line-height: 37px;
+  }
+}
+
+@media (max-width: 491px) {
+  .home__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .home__text {
+    margin: 20px 0 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .home__title {
+    font-size: 27px;
+    line-height: 30px;
+  }
 }

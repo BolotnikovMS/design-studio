@@ -31,3 +31,23 @@
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.9);
 }
+
+@media (max-width: 730px) {
+  .header-row {
+    flex-direction: column;
+  }
+
+  .header-row > img + * {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 530px) {
+  .header-row {
+    flex-direction: row;
+  }
+
+  .header-nav {
+    display: none;
+  }
+}
